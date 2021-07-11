@@ -5,10 +5,6 @@ collection <- function(xpaths, driver){
   # Within each year, we scrape every page of data
   # Each of these tasks are represented by a for loop
 
-
-  # The list containing the results
-  all_data <- list()
-
   for(tab in xpaths[["tabnames"]]){
     click_element_on_page(xpath_value = tab, driver = driver)
 
@@ -75,5 +71,5 @@ collection <- function(xpaths, driver){
     message("\n\n\n", determine_tabname(tab_xpath = tab), " Tab Complete.\n\n\n", sep = "")
 
   }#end of 'tab' for loop
-  return(all_data)
+
 }#end of collection()
