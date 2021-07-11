@@ -1,5 +1,5 @@
 # Equibase-Data
-Contains code that scrapes the Equibase Statistics page for most of its data. You cannot run this code, however, as scraping violates the company's terms of service; I discovered this fact after everything was already written. There's 8+ hours down the drain...
+Contains code that scrapes the [Equibase Statistics page](https://www.equibase.com/stats/View.cfm?tf=year&tb=horse) for most of its data. You cannot run this code, however, as scraping violates the company's terms of service; I discovered this fact after everything was already written. There's 8+ hours down the drain...
 
 # About
 ### Why Put it on GitHub?
