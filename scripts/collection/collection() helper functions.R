@@ -17,9 +17,9 @@ sleep <- function(){
 
 
 # loads the element then sleeps for a few seconds seconds
-click_element_on_page <- function(xpath_value){
+click_element_on_page <- function(xpath_value, driver){
   # Chooses the the element to click on
-  remote_driver$findElements(using = "xpath", value = xpath_value)[[1]]$clickElement()
+  driver$findElements(using = "xpath", value = xpath_value)[[1]]$clickElement()
 
   sleep()
 }

@@ -10,16 +10,16 @@ collection <- function(xpaths, driver){
   all_data <- list()
 
   for(tab in xpaths[["tabnames"]]){
-    click_element_on_page(xpath_value = tab)
+    click_element_on_page(xpath_value = tab, driver = driver)
 
     # Determines which xpath to use for the years--we want to use different UI elements for the years in 'Horses - By Foaling Year'
     xpaths[["relevant_years"]] <- determine_relevant_year(tab_xpath = tab, xpaths_list = xpaths)
 
     for(breed in xpaths[["horse_breeds"]]){
-      click_element_on_page(xpath_value = breed)
+      click_element_on_page(xpath_value = breed, driver = driver)
 
       for(year in xpaths[["relevant_years"]]){
-        click_element_on_page(xpath_value = year)
+        click_element_on_page(xpath_value = year, driver = driver)
 
 
 
