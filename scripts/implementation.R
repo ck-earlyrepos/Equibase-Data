@@ -1,4 +1,4 @@
-# PACKAGES ---------------------------------------------------------------
+# Packages ---------------------------------------------------------------
 if(!require(pacman)) install.pacakges("pacman")
 pacman::p_load(RSelenium, rvest, dplyr, readr, stringr)
 
@@ -35,4 +35,4 @@ url <- "https://www.equibase.com/stats/View.cfm?tf=year&tb=horse"
 remote_driver$navigate(url)
 
 # This is where the magic happens
-equibase_data <- collection(xpaths = xpaths, driver = remote_driver)
+collection(xpaths = xpaths, driver = remote_driver)

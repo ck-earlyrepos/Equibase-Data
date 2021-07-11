@@ -29,7 +29,7 @@ click_element_on_page <- function(xpath_value, driver){
 determine_relevant_year <- function(tab_xpath, xpaths_list){
   if(tab_xpath == "//*[@id=\"c-stats-central\"]/div/ul/li[2]/a"){
     relevant_years <- xpaths_list[["foaling_years"]]
-  }else {
+  } else {
     relevant_years <- xpaths_list[["years"]]
   }
 
