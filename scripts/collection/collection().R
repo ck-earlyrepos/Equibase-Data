@@ -2,8 +2,8 @@ collection <- function(xpaths, driver){
   # We scrape tab by tab
   # In each tab, we scrape each breed
   # Within each breed, we scrape each year for which there is data
-  # Within each year, we scrape every page of data
-  # Each of these tasks are represented by a for loop
+  # Within each year, we scrape each page of data
+  # Each of these tasks is represented by a for loop
 
   for(tab in xpaths[["tabnames"]]){
     click_element_on_page(xpath_value = tab, driver = driver)
